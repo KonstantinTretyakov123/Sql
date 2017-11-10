@@ -1,10 +1,10 @@
-/*CREATE DATABASE shop;
-GO*/
+CREATE DATABASE shop;
+GO
 
 USE shop;
 
 
-/*
+
 CREATE TABLE Buyer(
 Id INT PRIMARY KEY IDENTITY,
 FirstName NVARCHAR(15) DEFAULT 'unknown' NOT NULL,
@@ -44,7 +44,7 @@ VALUES
 ('Butter', (Select Id FROM Buyer WHERE FirstName = 'Vitya'), 'Savushkin Product', '2017-11-07', 0.25, 0.60)
 
 
-*/
+
 SELECT *, Cost/ProductWeight AS 'Cost Per Killo' FROM Product ORDER BY 'Cost Per Killo';	
 
 SELECT Age, COUNT(Age) AS 'Number of people'
